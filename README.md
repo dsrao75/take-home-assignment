@@ -85,4 +85,4 @@ This API is implemnted as RESTful Web Service using SpringBoot. In order to run 
         "priorPermit": "0",
         "expirationDate": "7/15/19 0:00",
         "distance": 0.43003751295214576177983190063969232141971588134765625
-    }] 
+    }].
