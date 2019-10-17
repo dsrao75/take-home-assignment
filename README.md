@@ -28,11 +28,14 @@ This API is implemnted as RESTful Web Service using SpringBoot. In order to run 
 
 # Testing the service
 
-Open a broser and enter the following URL
-	http://localhost:8080/foodfinder/find?latitude=37.79757899&longitude=-122.4114399&maxlocations=2
-This will display the JSON response as below. We can change the latitude, longitude, and maximm number of locations in the URL and get the results accordingly
-[
-    {
+	- Open a broser and enter the following URL
+	 
+		http://localhost:8080/foodfinder/find?latitude=37.79757899&longitude=-122.4114399&maxlocations=2
+	
+		This will display the JSON response as below. We can change the latitude, longitude, and maximm number of locations in the URL and get the results accordingly.
+
+	[
+		{
         "locationId": "934513",
         "applicant": "Mike's Catering",
         "facilityType": "Truck",
@@ -47,11 +50,6 @@ This will display the JSON response as below. We can change the latitude, longit
         "foodItems": "Cold Truck: packaged sandwiches: snacks: candy: hot and cold drinks",
         "x": "6009425.916",
         "y": "2118518.297",
-        "location": {
-            "locationId": "934513",
-            "longitude": -122.4114399,
-            "latitude": 37.79757899
-        },
         "latitude": "37.79757899",
         "longitude": "-122.4114399",
         "schedule": "http://bsm.sfdpw.org/PermitsTracker/reports/report.aspx?title=schedule&report=rptSchedule&params=permit=17MFF-0092&ExportPDF=1&Filename=17MFF-0092_schedule.pdf",
@@ -60,7 +58,8 @@ This will display the JSON response as below. We can change the latitude, longit
         "approved": "3/10/17 0:00",
         "received": "2/13/17",
         "priorPermit": "1",
-        "expirationDate": "7/15/18 0:00"
+        "expirationDate": "7/15/18 0:00",
+        "distance": 0
     },
     {
         "locationId": "1185382",
@@ -77,11 +76,6 @@ This will display the JSON response as below. We can change the latitude, longit
         "foodItems": "Hot coffee: iced coffee: hot chocolate: tea: pastries",
         "x": "6011635.905",
         "y": "2117976.662",
-        "location": {
-            "locationId": "1185382",
-            "longitude": -122.4037546,
-            "latitude": 37.7962155
-        },
         "latitude": "37.7962155",
         "longitude": "-122.4037546",
         "schedule": "http://bsm.sfdpw.org/PermitsTracker/reports/report.aspx?title=schedule&report=rptSchedule&params=permit=18MFF-0061&ExportPDF=1&Filename=18MFF-0061_schedule.pdf",
@@ -90,9 +84,7 @@ This will display the JSON response as below. We can change the latitude, longit
         "approved": "7/12/18 0:00",
         "received": "7/12/18",
         "priorPermit": "0",
-        "expirationDate": "7/15/19 0:00"
+        "expirationDate": "7/15/19 0:00",
+        "distance": 0.43003751295214576177983190063969232141971588134765625
     }
-]
-	
-	 
-	
+ ]
