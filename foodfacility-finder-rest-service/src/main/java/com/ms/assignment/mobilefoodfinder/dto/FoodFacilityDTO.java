@@ -34,6 +34,7 @@ public class FoodFacilityDTO implements Serializable, Cloneable {
 	private String received;	
 	private String priorPermit;	
 	private String expirationDate;
+	
 	private BigDecimal distance;
 
 	public String getLocationId() {
