@@ -34,7 +34,9 @@ public class MobileFoodFacilityLocatorServiceImpl implements MobileFoodFacilityL
         		facilityList = new ArrayList<FoodFacilityDTO>();
         		distancesMap.put(distance, facilityList);
         	}
-        	facilityList.add((FoodFacilityDTO)SerializationUtils.clone(facility));
+        	FoodFacilityDTO clonedDto = (FoodFacilityDTO)SerializationUtils.clone(facility);
+        	clonedDto.setDistance(distance);
+        	facilityList.add(clonedDto);
         }
         
         //get nearset facilities

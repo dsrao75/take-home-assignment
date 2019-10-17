@@ -1,6 +1,9 @@
 package com.ms.assignment.mobilefoodfinder.dto;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class FoodFacilityDTO implements Serializable, Cloneable {
 	
@@ -19,7 +22,8 @@ public class FoodFacilityDTO implements Serializable, Cloneable {
 	private String status;	
 	private String foodItems;	
 	private String x;	
-	private String y;
+	private String y;	
+	@JsonIgnore
 	private Location location;
 	private String latitude;	
 	private String longitude;	
@@ -30,6 +34,7 @@ public class FoodFacilityDTO implements Serializable, Cloneable {
 	private String received;	
 	private String priorPermit;	
 	private String expirationDate;
+	private BigDecimal distance;
 
 	public String getLocationId() {
 		return locationId;
@@ -177,6 +182,13 @@ public class FoodFacilityDTO implements Serializable, Cloneable {
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	
+	public BigDecimal getDistance() {
+		return distance;
+	}
+	public void setDistance(BigDecimal distance) {
+		this.distance = distance;
 	}
 	
 	@Override
