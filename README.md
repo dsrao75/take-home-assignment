@@ -28,14 +28,13 @@ This API is implemnted as RESTful Web Service using SpringBoot. In order to run 
 
 # Testing the service
 
-	- Open a broser and enter the following URL
+	* Open a broser and enter the following URL
 	 
-		http://localhost:8080/foodfinder/find?latitude=37.79757899&longitude=-122.4114399&maxlocations=2
+	  http://localhost:8080/foodfinder/find?latitude=37.79757899&longitude=-122.4114399&maxlocations=2
 	
-		This will display the JSON response as below. We can change the latitude, longitude, and maximm number of locations in the URL and get the results accordingly.
+	  This will display the JSON response as below. We can change the latitude, longitude, and maximm number of locations in the URL and get the results accordingly.
 
-	[
-		{
+	[{
         "locationId": "934513",
         "applicant": "Mike's Catering",
         "facilityType": "Truck",
@@ -86,5 +85,4 @@ This API is implemnted as RESTful Web Service using SpringBoot. In order to run 
         "priorPermit": "0",
         "expirationDate": "7/15/19 0:00",
         "distance": 0.43003751295214576177983190063969232141971588134765625
-    }
- ]
+    }] 
