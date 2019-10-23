@@ -1,4 +1,16 @@
-# Take Home Assignment
+# Take Home Assignment Problem
+
+Our San Francisco team loves to eat. They are also a team that loves variety, so they also like to discover new places to eat.
+
+In fact, we have a particular affection for food trucks. One of the great things about Food Trucks in San Francisco is that the city releases a list of them as open data.
+
+Your assignment is to make it possible for us to find a food truck no matter where our work takes us in the city.
+
+This is a freeform assignment. You can write a web API that returns a set of food trucks in JSON
+
+The only requirement for the assignment is that it give us at least 5 food trucks to choose from a particular latitude and longitude.
+
+# Solution 
 
 FoodFacility Finder API provides a list of facilities near by the given coordinates (longitude, latitude). Users can provide the maximm number of near by facilities they want to see.
 
